@@ -1,0 +1,166 @@
+
+@font-face {
+  font-family: "anironcregular";
+  src: url("fonts/aniron-webfont.woff2") format("woff2"), url("fonts/aniron-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "party_businessregular";
+  src: url("fonts/partybusiness-webfont.woff2") format("woff2"), url("fonts/partybusiness-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "anironcregular", Arial, serif;
+  font-size: 10px;
+}
+
+h2 {
+ /* calc () is a CSS3 function that provides the ability to perform operations
+   mathematics in CSS (addition, subtraction, division and multiplication). */
+  font-size: calc(15px + 1vw);
+  margin: 4vw auto;
+}
+
+.row {
+  margin: 25px auto;
+}
+
+/* -------------------------------------- */
+/* Navbar                                 */
+/* -------------------------------------- */
+.navbar.navbar-expand-lg {
+  background-color: orange;
+}
+.navbar.navbar-expand-lg .nav-link {
+  color: white;
+  font-size: 15px;
+}
+.navbar.navbar-expand-lg .nav-link:hover {
+  color: white;
+  text-decoration: underline white;
+}
+.navbar.navbar-expand-lg .navbar-nav, .navbar.navbar-expand-lg .nav-item {
+  margin-left: auto;
+}
+.navbar.navbar-expand-lg .fa-bars {
+  color: white;
+}
+
+/* Mise en page Sections                  */
+/* -------------------------------------- */
+section {
+  background-color: #EDEDED;
+  color: #2B2B2B;
+  padding: 15px;
+}
+
+/* -------------------------------------- */
+/* Footer                                 */
+/* -------------------------------------- */
+footer.row {
+  background-color: orange;
+  margin: 0;
+  font-family: party_businessregular, Arial, serif;
+}
+footer.row ul {
+  list-style-type: none;
+}
+footer.row a {
+  text-decoration: none;
+  color: white;
+}
+
+.surrounded-title:before, .surrounded-title:after {
+  content: "";
+  display: block;
+  margin: 0 10px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0.9px 0.9px 0.9px #cc5f00, inset 0.9px 0.9px 0.9px #cc5f00;
+  border: 4.090px solid orange;
+}
+/* La propriété inset définit les décalages d'un élément par rapport au début et à la fin de l'axe en ligne*/
+
+.one-ring:before {
+  content: "";
+  display: block;
+  margin: 0 10px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 3px #cccc00, inset 3px 3px 3px #cccc00;
+  border: 13.63px solid orange;
+}
+
+.chained-ring:nth-of-type(1) {
+  border-radius: 50%;
+  height: 46.67px;
+  width: 46.67px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0.93px 0.93px 0.93px #4d4d4d, inset 0.93px 0.93px 0.93px #4d4d4d;
+  border: 4.24px solid #666666;
+  margin-right: -18.375px;
+}
+
+.chained-ring:nth-of-type(2) {
+  border-radius: 50%;
+  height: 58.33px;
+  width: 58.33px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1.167px 1.167px 1.167px #4d4d4d, inset 1.167px 1.167px 1.167px #4d4d4d;
+  border: 5.30px solid #666666;
+  margin-right: -24.5px;
+}
+
+.chained-ring:nth-of-type(3) {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1.4px 1.4px 1.4px #4d4d4d, inset 1.4px 1.4px 1.4px #4d4d4d;
+  border: 6.36px solid #666666;
+  margin-right: -30.625px;
+}
+
+.chained-ring:nth-of-type(4) {
+  border-radius: 50%;
+  height: 81.67px;
+  width: 81.67px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1.63px 1.63px 1.63px #4d4d4d, inset 1.63px 1.63px 1.63px #4d4d4d;
+  border: 7.42px solid #666666;
+  margin-right: -36.75px;
+}
+
+.chained-ring:nth-of-type(5) {
+  border-radius: 50%;
+  height: 93.33px;
+  width: 93.33px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 1.867px 1.867px 1.867px #4d4d4d, inset 1.867px 1.867px 1.867px #4d4d4d;
+  border: 8.48px solid #666666;
+  margin-right: -42.875px;
+}
+
+.chained-ring:nth-of-type(6) {
+  border-radius: 50%;
+  height: 105px;
+  width: 105px;
+  vertical-align: -50%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 2.1px 2.1px 2.1px #4d4d4d, inset 2.1px 2.1px 2.1px #4d4d4d;
+  border: 9.545px solid #666666;
+  margin-right: -49px;
+}
