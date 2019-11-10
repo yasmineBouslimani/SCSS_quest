@@ -1,0 +1,64 @@
+$orange : #FE5E00;
+
+@mixin ring($heightAndWidth, $color) {
+    height : $heightAndWidth;
+    width : $heightAndWidth;
+    border-radius : 50%;
+    border: 10px solid $color;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    margin : 15px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ring1 {
+        @include ring(30px, $orange);
+    }
+
+    .ring2 {
+        @include ring(100px, yellow);
+    }
+    @for $i from 1 through 6 {
+        .ring2-#{$i} {
+            width: 100px*$i;
+            @include ring(20px * $i, grey);
+            margin-left: -12px * $i;
+        }
+    }
+}
+
+.header
+{
+    background-color: $orange;
+    color: white;
+    display: flex;
+    list-style: none;
+    height : 50px;
+    justify-content : space-around;
+    .title {
+        font-size: 30px;
+    }
+}
+
+section {
+    background-image : url('https://pixees.fr/wp-content/uploads/2017/08/rainy-2680173__340.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+
+}
+
+footer {
+    display:flex;
+    background-color: $orange;
+    color: white;
+    justify-content : space-around;
+    padding-left: 10px;
+    width: 100%;
+    height :100px;
+    li {
+        list-style : none;
+    }
+}
